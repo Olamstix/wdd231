@@ -1,0 +1,22 @@
+@media (min-width: 640px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #course-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
