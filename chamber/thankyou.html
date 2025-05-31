@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Directory page of the Nigeria Chamber of Commerce showcasing local business members." />
+        <meta name="author" content="Olamide Mobolaji" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+        <!-- Facebook Meta -->
+        <meta property="og:title" content="Nigeria Chamber of Commerce Directory" />
+        <meta property="og:description" content="Connect with businesses in Nigeria through our Chamber of Commerce." />
+        <meta property="og:image" content="images/chamber-preview.jpg" />
+        <meta property="og:url" content="https://yourdomain.com/chamber/directory.html" />
+        <meta property="og:type" content="website" />
+
+        <title>Nigeria Chamber Directory | Home</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/thankyou.css" />
+    </head>
+
+    <body>
+        <!-- ===== HEADER ===== -->
+        <header>
+            <h1>Nigeria Chamber of Commerce</h1>
+            <p>Empowering Businesses Across Nigeria</p>
+        </header>
+
+        <!-- ===== NAVIGATION ===== -->
+        <nav>
+            <div class="nav-container">
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <div id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <h2>Your Submitted Information</h2>
+            <dl id="submitted-info">
+                <!-- Filled dynamically -->
+            </dl>
+
+            <a href="join.html" class="button-back">Back to Join Form</a>
+        </main>
+
+
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>Contact us: info@nigerianchamber.org | +234-1-700-8000</p>
+            <p>&copy; <span id="year"></span> | Olamide Mobolaji | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+
+
+        <script src="./scripts/thankyou.js"></script>
+        <script src="js/menu-toggle.js"></script>
+        <script src="./scripts/weather.js"></script>
+        <script src="./scripts/spotlight.js"></script>
+
+
+        <script>
+            // Footer year and last modified
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
+
+        <script src="./scripts/directory.js" defer></script>
+    </body>
+
+</html>
