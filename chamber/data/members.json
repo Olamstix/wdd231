@@ -22,6 +22,79 @@
       "url": "https://www.instagram.com/arike_fashionhouse/",
       "image": "arike fashion house.jpg",
       "membership": 1
-    }
+    },
+    {
+        "name": "Dangote Group",
+        "address": "Union Marble House, 1 Alfred Rewane Rd, Ikoyi, Lagos",
+        "phone": "+234 1 448 0815",
+        "website": "https://www.dangote.com",
+        "image": "dangote.jpg",
+        "membership": 3,
+        "info": "Diversified industrial conglomerate with interests in cement, sugar, salt, and more."
+      },
+      {
+        "name": "Flutterwave",
+        "address": "8 Providence Street, Lekki Phase 1, Lagos",
+        "phone": "+234 1 888 9595",
+        "website": "https://www.flutterwave.com",
+        "image": "flutterwave.png",
+        "membership": 3,
+        "info": "Leading payments technology company connecting Africa to the global economy."
+      },
+      {
+        "name": "Innoson Vehicle Manufacturing",
+        "address": "Plot W/L Industrial Layout, Umudim, Nnewi, Anambra",
+        "phone": "+234 815 200 6000",
+        "website": "https://www.innosonvehicles.com",
+        "image": "innoson.jpg",
+        "membership": 2,
+        "info": "Nigeria’s first indigenous car manufacturer."
+      },
+      {
+        "name": "Jumia Nigeria",
+        "address": "109 Adeniyi Jones Avenue, Ikeja, Lagos",
+        "phone": "+234 1 888 1100",
+        "website": "https://www.jumia.com.ng",
+        "image": "jumia.png",
+        "membership": 2,
+        "info": "Nigeria’s largest online shopping mall."
+      },
+      {
+        "name": "GTBank (Guaranty Trust Bank)",
+        "address": "Plot 635, Akin Adesola Street, Victoria Island, Lagos",
+        "phone": "+234 700 4826 66328",
+        "website": "https://www.gtbank.com",
+        "image": "gtbank.png",
+        "membership": 3,
+        "info": "Major financial institution providing banking services across Africa."
+      },
+      {
+        "name": "Filmhouse Cinemas",
+        "address": "Genesis Center, 6 Oba Akran Ave, Ikeja, Lagos",
+        "phone": "+234 812 777 7766",
+        "website": "https://www.filmhouseng.com",
+        "image": "filmhouse.jpg",
+        "membership": 1,
+        "info": "One of Nigeria's leading cinema chains and film distributors."
+      },
+      {
+        "name": "Wakanow",
+        "address": "Plot 8 Elegushi Beach Road, Lekki Phase 1, Lagos",
+        "phone": "+234 1 277 3010",
+        "website": "https://www.wakanow.com",
+        "image": "wakanow.jpg",
+        "membership": 2,
+        "info": "Leading online travel agency in West Africa."
+      },
+      {
+        "name": "Konga",
+        "address": "Yudala Heights, 13A Idowu Martins St, Victoria Island, Lagos",
+        "phone": "+234 1 888 3435",
+        "website": "https://www.konga.com",
+        "image": "konga.png",
+        "membership": 1,
+        "info": "Trusted e-commerce and logistics platform in Nigeria."
+      }
+    
   ]
   
