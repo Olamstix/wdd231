@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Directory page of the Nigeria Chamber of Commerce showcasing local business members." />
+        <meta name="author" content="Olamide Mobolaji" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+        <!-- Facebook Meta -->
+        <meta property="og:title" content="Nigeria Chamber of Commerce Directory" />
+        <meta property="og:description" content="Connect with businesses in Nigeria through our Chamber of Commerce." />
+        <meta property="og:image" content="images/chamber-preview.jpg" />
+        <meta property="og:url" content="https://yourdomain.com/chamber/directory.html" />
+        <meta property="og:type" content="website" />
+
+        <title>Nigeria Chamber Directory | Home</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+
+    <body>
+        <!-- ===== HEADER ===== -->
+        <header>
+            <h1>Nigeria Chamber of Commerce</h1>
+            <p>Empowering Businesses Across Nigeria</p>
+        </header>
+
+        <!-- ===== NAVIGATION ===== -->
+        <nav>
+            <div class="nav-container">
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <div id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <img src="images/hero.jpg" alt="Nigeria Chamber of Commerce building" />
+                <div class="hero-text">
+                    <h2>Empowering Nigerian Businesses</h2>
+                    <p>Connecting businesses, fostering growth, and creating opportunities nationwide.</p>
+                    <a href="join.html" class="btn-cta">Join the Chamber Today</a>
+                </div>
+            </section>
+
+            <!-- Current Events Section -->
+            <section class="events-section container">
+                <h3>Current Events</h3>
+                <ul>
+                    <li><strong>Annual Business Expo 2025</strong> - March 15-17, Lagos</li>
+                    <li><strong>SME Workshop Series</strong> - April 10, Abuja</li>
+                    <li><strong>Trade Policy Forum</strong> - May 5, Port Harcourt</li>
+                </ul>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather-section container" aria-live="polite">
+                <h3>Current Weather in Lagos</h3>
+                <div id="weather-current" class="weather-current">
+                    <!-- JavaScript will insert current weather here -->
+                </div>
+                <div id="weather-forecast" class="weather-forecast">
+                    <!-- JavaScript will insert 3-day forecast here -->
+                </div>
+            </section>
+
+            <!-- Spotlight Section -->
+            <section class="spotlight-section container">
+                <h3>Member Spotlights</h3>
+                <div id="spotlight-cards" class="spotlight-cards">
+                    <!-- JS will load 2-3 silver/gold members here -->
+                </div>
+            </section>
+        </main>
+
+
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>Contact us: info@nigerianchamber.org | +234-1-700-8000</p>
+            <p>&copy; <span id="year"></span> | Olamide Mobolaji | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+
+
+        <!-- <script src="js/menu-toggle.js"></script> -->
+        <script src="./scripts/weather.js"></script>
+        <script src="./scripts/spotlight.js"></script>
+
+
+        <script>
+            // Footer year and last modified
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
+
+        <script src="./scripts/directory.js" defer></script>
+    </body>
+
+</html>

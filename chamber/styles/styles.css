@@ -162,6 +162,14 @@ footer {
         font-size: 17px;
         text-align: start;
     }
+
+    .hero-text {
+        visibility: hidden;
+    }
+
+    .btn-cta {
+        padding: 100px;
+    }
 }
 
 
@@ -208,4 +216,110 @@ footer {
     #nav-links.show {
         display: flex;
     }
+}
+
+
+
+
+
+
+
+/* --- General Container --- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    margin: 1rem 0;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-cta {
+    background-color: #007b3a;
+    /* Nigerian green */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+    background-color: #005723;
+    outline: none;
+}
+
+/* --- Events Section --- */
+.events-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.events-section li {
+    padding: 0.4rem 0;
+    font-size: 1.1rem;
+}
+
+/* --- Weather Section --- */
+.weather-section {
+    background-color: #f5f9f7;
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+}
+
+.weather-current p,
+.weather-forecast p {
+    margin: 0.3rem 0;
+}
+
+.forecast-day {
+    margin-bottom: 0.8rem;
+}
+
+/* --- Spotlight Section --- */
+.spotlight-cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
 }
