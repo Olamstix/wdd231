@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Directory page of the Nigeria Chamber of Commerce showcasing local business members." />
+        <meta name="author" content="Olamide Mobolaji" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+        <!-- Facebook Meta -->
+        <meta property="og:title" content="Nigeria Chamber of Commerce Directory" />
+        <meta property="og:description" content="Connect with businesses in Nigeria through our Chamber of Commerce." />
+        <meta property="og:image" content="images/chamber-preview.jpg" />
+        <meta property="og:url" content="https://yourdomain.com/chamber/directory.html" />
+        <meta property="og:type" content="website" />
+
+        <title>Nigeria Chamber Directory | Join </title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/join.css" />
+    </head>
+
+    <body>
+        <!-- ===== HEADER ===== -->
+        <header>
+            <h1>Nigeria Chamber of Commerce</h1>
+            <p>Empowering Businesses Across Nigeria</p>
+        </header>
+
+        <!-- ===== NAVIGATION ===== -->
+        <nav>
+            <div class="nav-container">
+                <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <div id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <main>
+            <form method="get" action="thankyou.html" novalidate>
+                <h2>Membership Form</h2>
+                <label for="firstName">First Name
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                        autocomplete="given-name" required />
+                </label>
+
+                <label for="lastName">Last Name
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name"
+                        autocomplete="family-name" required />
+                </label>
+
+                <label for="orgTitle">Organizational Title
+                    <input type="text" id="orgTitle" name="orgTitle" title="Enter your organizational title"
+                        autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$"
+                        placeholder="At least 7 characters; letters, spaces, hyphens only" />
+                </label>
+
+                <label for="email">Email Address
+                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                        required placeholder="example@example.com" />
+                </label>
+
+                <label for="mobile">Mobile Phone
+                    <input type="tel" id="mobile" name="mobile" title="Enter your mobile phone number"
+                        autocomplete="tel" required />
+                </label>
+
+                <label for="businessName">Business/Organization Name
+                    <input type="text" id="businessName" name="businessName"
+                        title="Enter your business or organization name" autocomplete="organization" required />
+                </label>
+
+                <label for="membershipLevel">Membership Level
+                    <select id="membershipLevel" name="membershipLevel" title="Select membership level" required>
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np">NP Membership (No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">Business/Organization Description
+                    <textarea id="description" name="description"
+                        title="Describe your business or organization"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp" />
+
+                <input type="submit" value="Submit Application" />
+            </form>
+
+            <section class="membership-cards" aria-label="Membership Levels">
+                <h2>Membership Level</h2>
+
+                <article class="membership-card" tabindex="0" data-modal="modal-np">
+                    <h3>NP Membership</h3>
+                    <a href="#" class="open-modal-link" aria-haspopup="dialog">Learn More</a>
+                </article>
+                <article class="membership-card" tabindex="0" data-modal="modal-bronze">
+                    <h3>Bronze Membership</h3>
+                    <a href="#" class="open-modal-link" aria-haspopup="dialog">Learn More</a>
+                </article>
+                <article class="membership-card" tabindex="0" data-modal="modal-silver">
+                    <h3>Silver Membership</h3>
+                    <a href="#" class="open-modal-link" aria-haspopup="dialog">Learn More</a>
+                </article>
+                <article class="membership-card" tabindex="0" data-modal="modal-gold">
+                    <h3>Gold Membership</h3>
+                    <a href="#" class="open-modal-link" aria-haspopup="dialog">Learn More</a>
+                </article>
+            </section>
+        </main>
+
+
+
+        <!-- Modals -->
+        <div id="modal-np" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-np-title" tabindex="-1">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <h2 id="modal-np-title">NP Membership Benefits</h2>
+                <p>No fee for non-profit organizations. Access to chamber events and networking opportunities.</p>
+            </div>
+        </div>
+
+        <div id="modal-bronze" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-bronze-title"
+            tabindex="-1">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <h2 id="modal-bronze-title">Bronze Membership Benefits</h2>
+                <p>Access to special events, newsletters, and basic advertising opportunities.</p>
+            </div>
+        </div>
+
+        <div id="modal-silver" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-silver-title"
+            tabindex="-1">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <h2 id="modal-silver-title">Silver Membership Benefits</h2>
+                <p>Includes Bronze benefits plus priority event seating and enhanced advertising.</p>
+            </div>
+        </div>
+
+        <div id="modal-gold" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-gold-title"
+            tabindex="-1">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <h2 id="modal-gold-title">Gold Membership Benefits</h2>
+                <p>All Silver benefits plus spotlight positions on homepage, exclusive training, and discounts.</p>
+            </div>
+        </div>
+
+
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>Contact us: info@nigerianchamber.org | +234-1-700-8000</p>
+            <p>&copy; <span id="year"></span> | Olamide Mobolaji | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+
+
+        <script src="./scripts/join.js"></script>
+        <script src="./scripts/weather.js"></script>
+        <script src="./scripts/spotlight.js"></script>
+
+
+        <script>
+            // Footer year and last modified
+            document.getElementById("year").textContent = new Date().getFullYear();
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
+
+        <script src="./scripts/directory.js" defer></script>
+    </body>
+
+</html>
