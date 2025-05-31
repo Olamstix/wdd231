@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Naija Foods Ltd",
+      "address": "23 Marina Street, Lagos",
+      "phone": "+234-809-123-4567",
+      "url": "https://naijafoods.ng",
+      "image": "naija foods.png",
+      "membership": 3
+    },
+    {
+      "name": "GreenTech Innovations",
+      "address": "Plot 9, Gwarinpa Estate, Abuja",
+      "phone": "+234-802-456-7890",
+      "url": "https://green-tech-innovations.com/",
+      "image": "green tech innovation.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Arike Fashion House",
+      "address": "12 Allen Avenue, Ikeja, Lagos",
+      "phone": "+234-803-321-8765",
+      "url": "https://www.instagram.com/arike_fashionhouse/",
+      "image": "arike fashion house.jpg",
+      "membership": 1
+    }
+  ]
+  
