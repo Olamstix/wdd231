@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiBudget | Site Plan</title>
+  <style>
+    /* ===========================
+       COLOR SCHEME & TYPOGRAPHY
+    ============================ */
+    :root {
+      --primary-color: #004aad;   /* Used for headings and accents */
+      --secondary-color: #f4f6fa; /* Background color */
+      --accent-color: #ffb703;    /* Highlight color for links and buttons */
+      --text-color: #333333;      /* Body text color */
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+      font-family: "Montserrat", sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem 0;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    section {
+      background-color: white;
+      margin: 1.5rem auto;
+      padding: 1.5rem;
+      max-width: 900px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      border-bottom: 3px solid var(--accent-color);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+
+    .wireframes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 1rem;
+    }
+
+    .wireframe {
+      text-align: center;
+      background-color: #fafafa;
+      border: 1px dashed #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 45%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MiBudget – Site Plan</h1>
+    <p>A Personal Budgeting Web Application</p>
+  </header>
+
+  <main>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>MiBudget</strong></p>
+      <p>
+        The name <strong>“MiBudget”</strong> was selected because it is simple, memorable, and
+        emphasizes personal ownership (“My Budget”). It reflects the app’s goal of helping
+        users manage and track their income and expenses efficiently.
+      </p>
+      <p><em>Optional domain:</em> mibudgetapp.com</p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>
+        The MiBudget website serves as a personal finance management tool designed to help
+        users record, organize, and analyze their financial activities. The platform will allow
+        users to add income and expenses, view categorized transactions, and generate summaries
+        that promote better budgeting habits.
+      </p>
+    </section>
+
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <ul>
+        <li>
+          How can I keep track of all my monthly income and expenses in one place?
+        </li>
+        <li>
+          Can I see a summary of my total earnings and spending to know if I’m saving or overspending?
+        </li>
+      </ul>
+    </section>
+
+    <section id="color-schema">
+      <h2>Color Schema</h2>
+      <p>
+        The MiBudget color scheme emphasizes professionalism and trust, using cool blues and
+        light backgrounds for clarity and calmness. The yellow accent color adds a friendly and
+        modern touch.
+      </p>
+      <ul>
+        <li><strong>Primary Color (#004aad):</strong> Used for headings, navigation bar, and logo.</li>
+        <li><strong>Secondary Color (#f4f6fa):</strong> Used for page background and section contrast.</li>
+        <li><strong>Accent Color (#ffb703):</strong> Used for buttons, highlights, and hover effects.</li>
+        <li><strong>Text Color (#333333):</strong> Used for main body text.</li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <p>
+        The site will use clean, readable, and modern fonts that improve legibility and maintain
+        a professional tone.
+      </p>
+      <ul>
+        <li><strong>Headings:</strong> Montserrat, sans-serif</li>
+        <li><strong>Body Text:</strong> Poppins, sans-serif</li>
+        <li><strong>Accent/Buttons:</strong> Use bold Montserrat for emphasis</li>
+      </ul>
+    </section>
+
+    <section id="wireframe">
+      <h2>Wireframe</h2>
+      <p>
+        Below are simple wireframe sketches illustrating the planned layout for the home page
+        in both mobile and desktop views.
+      </p>
+
+      <div class="wireframes">
+        <div class="wireframe">
+          <h3>Mobile View</h3>
+          <img src="./images/MiBudget Mobile.png" alt="Mobile wireframe sketch" />
+        </div>
+        <div class="wireframe">
+          <h3>Desktop View</h3>
+          <img src="./images/MiBudget Desktop.png" alt="Desktop wireframe sketch" />
+        </div>
+      </div>
+    </section>
+
+    <section id="testing">
+      <h2>Testing and Validation</h2>
+      <p>
+        The MiBudget site will be tested using HTML and CSS validation tools, Lighthouse audits for
+        performance and SEO, and color contrast checkers for accessibility. Regular testing will ensure
+        compliance with best practices for responsive design, accessibility, and user experience.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MiBudget | Site Plan by Olamide Mobolaji</p>
+  </footer>
+</body>
+</html>
